@@ -1,0 +1,649 @@
+.wrap_container{
+  width: 100%;
+}
+.home{
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 10;
+}
+.home a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.521);
+  font-size: 30px;
+}
+/*모바일 및 태블릿버전*/
+@media all and (min-width:320px){
+  .main_spot{
+    margin-top: 60px;
+    height: 50vw;
+    background: #fff url(../image/mainspot.png) 50% 100% no-repeat;
+    background-size: cover;
+  }
+  /*카테고리*/
+  .room_link{
+    margin: 30px auto;
+    width: 90%;
+    text-align: center;
+  }
+  .room_link_list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  .room_link_list li{
+    width: 33%;
+  }
+  .room_link_list li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.362)
+  }
+  .roomicon{
+    margin: 0 auto;
+    display: inline-block;
+    width: 20vmin;
+    height: 20vmin;
+  }
+  #icon1{
+    background: url(../image/모텔.png) center no-repeat;
+    background-size: cover;
+  }
+  #icon2{
+    background: url(../image/호텔.png) center no-repeat;
+    background-size: cover;
+  }
+  #icon3{
+    background: url(../image/펜션.png) center no-repeat;
+    background-size: cover;
+  }
+  #icon4{
+    background: url(../image/게스트하우스.png) center no-repeat;
+    background-size: cover;
+  }
+  #icon5{
+    background: url(../image/캠핑.png) center no-repeat;
+    background-size: cover;
+  }
+  #icon6{
+    background: url(../image/한옥.png) center no-repeat;
+    background-size: cover;
+  }
+
+  /*소식*/
+  .recommend{
+    display: none;
+  }
+  .recommend_mobile{
+    margin: 0 auto;
+    width: 90%;
+  }
+  .recommend_mobile h2{
+    margin: 100px 0 30px 20px;
+    font-size: 4vmin;
+  }
+  .recommend_mlist{
+    list-style: none;
+  }
+  .mlist{
+    margin: 20px;
+  }
+  .mlist a{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .mlist a img{
+    width: 20vmin;
+    height: 20vmin;
+  }
+  .mlist a div{
+    border: 1px solid #ccc;
+    border-left: none;
+    width: 80vmin;
+    height: 20vmin;
+    padding: 20px;
+  }
+  .mlist a div h3{
+    font-size: 3vmin;
+    line-height: 5vmin;
+    color: rgb(0, 121, 107);
+  }
+  .mlist a div p{
+    font-size: 2vmin;
+    line-height: 2.5vmin;
+    color: black;
+  }
+
+
+  /*앱 다운로드*/
+  .app{
+    display: none;
+  }
+
+  /*트랜드 숙소*/
+  .trand_container{
+    margin: 0px auto;
+    width: 90%;
+  }
+  .trand_container h2{
+    margin: 100px 0 40px 20px;
+    font-size: 4vmin;
+  }
+  .tr_content{
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 25vmin;
+  }
+  .tr_content h3{
+    color: white;
+    font-size: 4vmin;
+  }
+  #camp{
+    border-radius: 20px;
+    width: 100%;
+    height: 25vmin;
+    background: rgba(0, 0, 0, 0.373) url(../image/가평img.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+  #jeonju{
+    border-radius: 20px;
+    width: 100%;
+    height: 25vmin;
+    background: rgba(0, 0, 0, 0.373) url(../image/전주img.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+  #sinra{
+    border-radius: 20px;
+    width: 100%;
+    height: 25vmin;
+    background: rgba(0, 0, 0, 0.373) url(../image/신라스테이.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+  #gongiam{
+    border-radius: 20px;
+    width: 100%;
+    height: 25vmin;
+    background: rgba(0, 0, 0, 0.373) url(../image/곤지암리조트.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+  #yangpyung{
+    border-radius: 20px;
+    width: 100%;
+    height: 25vmin;
+    background: rgba(0, 0, 0, 0.373) url(../image/양평.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+
+  /*이벤트*/
+  .section h2{
+    margin-bottom: 20px;
+    font-size: 4vmin;
+  }
+	.section input[id*="slide"] {
+    display:none;
+  }
+  .section{
+    margin: 80px auto;
+    width: 90%;
+  }
+	.section .slidewrap {
+    width:100%;
+    margin:0 auto;
+    overflow:hidden;
+  }
+	.section .slidelist {
+    white-space:nowrap;
+    font-size:0;
+  }
+	.section .slidelist > li {
+    display:inline-block;
+    vertical-align:middle;
+    width:100%;
+    transition:all .5s;
+  }
+	.section .slidelist > li > a {
+    display:block;
+    position:relative;
+    overflow:hidden;
+  }
+	.section .slidelist > li > a img {
+    width:100%;
+  }
+	.section .slidelist label {
+    position:absolute;
+    z-index:1;
+    top:50%;
+    transform:translateY(-50%);
+    padding:50px;
+    cursor:pointer;
+  }
+	.section .slidelist .left {
+    left: 0;
+    background:url('../image/left.png') center center / 50% no-repeat;
+  }
+	.section .slidelist .right {
+    right:0;
+    background:url('../image/right.png') center center / 50% no-repeat;
+  }
+	.section input[id="slide1"]:checked ~ .slidewrap .slidelist > li {
+    transform:translateX(0%);
+  }
+	.section input[id="slide2"]:checked ~ .slidewrap .slidelist > li {
+    transform:translateX(-100%);
+  }
+	.section input[id="slide3"]:checked ~ .slidewrap .slidelist > li {
+    transform:translateX(-200%);
+  }
+	.section input[id="slide1"]:checked ~ .slidewrap li:nth-child(1) .left {
+    left:-30px;
+    transition:all .35s ease .5s;
+  }
+	.section input[id="slide1"]:checked ~ .slidewrap li:nth-child(1) .right {
+    right:-30px;
+    transition:all .35s ease .5s;
+  }
+	.section input[id="slide2"]:checked ~ .slidewrap li:nth-child(2) .left {
+    left:-30px;
+    transition:all .35s ease .5s;
+  }
+	.section input[id="slide2"]:checked ~ .slidewrap li:nth-child(2) .right {
+    right:-30px;
+    transition:all .35s ease .5s;
+  }
+	.section input[id="slide3"]:checked ~ .slidewrap li:nth-child(3) .left {
+    left:-30px;
+    transition:all .35s ease .5s;
+  }
+	.section input[id="slide3"]:checked ~ .slidewrap li:nth-child(3) .right {
+    right:-30px;
+    transition:all .35s ease .5s;
+  }
+
+  /*공지사항*/
+  .notice{
+    margin: 100px auto;
+    width: 90%;
+  }
+  .notice h2{
+    margin-bottom: 20px;
+    font-size: 4vmin;
+  }
+  .notice_container{
+    width: 100%;
+    border-top: 3px solid black;
+  }
+  .notice_list{
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .notice_list_content{
+    margin: 20px;
+    height: 60px;
+    border-bottom: 2px solid #ccc;
+  }
+  .notice_list_content a{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
+  }
+  .notice_title{
+    text-align: center;
+    font-size: 3vmin;
+    color: #ccc;
+    width: 12vmin;
+  }
+  .notice_info{
+    font-size: 2vmin;
+    width: 50vmin;
+  }
+  .notice_date{
+    padding-left: 10px;
+    text-align: center;
+    font-size: 3vmin;
+    width: 12vmin;
+    color: #ccc;
+  }
+}
+
+/*pc버전*/
+@media all and (min-width:1024px){
+  .main_spot{
+    height: 580px;
+    background: #fff url(../image/mainspot.png) 50% 100% no-repeat;
+    background-size: 924px auto;
+  }
+  /*카테고리*/
+  .room_link{
+    margin: 30px auto;
+    margin-bottom: 100px;
+    width: 924px;
+    text-align: center;
+  }
+  .room_link_list{
+    gap: 10px;
+    list-style: none;
+    display: flex;
+  }
+  .room_link_list li{
+    width: 145px;
+  }
+  .room_link_list li a{
+    display: block;
+    height: 150px;
+    font-size: 18px;
+    width: 145px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.362)
+  }
+  .roomicon{
+    margin: 0 auto;
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+  }
+  #icon1{
+    background: url(../image/모텔.png) center no-repeat;
+    background-size: cover;
+  }
+  #icon2{
+    background: url(../image/호텔.png) center no-repeat;
+    background-size: cover;
+  }
+  #icon3{
+    background: url(../image/펜션.png) center no-repeat;
+    background-size: cover;
+  }
+  #icon4{
+    background: url(../image/게스트하우스.png) center no-repeat;
+    background-size: cover;
+  }
+  #icon5{
+    background: url(../image/캠핑.png) center no-repeat;
+    background-size: cover;
+  }
+  #icon6{
+    background: url(../image/한옥.png) center no-repeat;
+    background-size: cover;
+  }
+
+
+  /*소식*/
+  .recommend_mobile{
+    display: none;
+  }
+  .recommend{
+    margin: 50px auto;
+    width: 924px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .recommend h2{
+    font-size: 25px;
+    width: 100%;
+    margin: 10px 0 40px 0;
+  }
+  .recommend_list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .list{
+    width: 457px;
+  }
+  .list a{
+    border: 1px solid #ccc;
+    border-left: none;
+    display: flex;
+    text-decoration: none;
+    color: black;
+  }
+  .list a img{
+    width: 162px;
+    height: 162px;
+  }
+  .list a div h3{
+    padding: 10px;
+    font-size: 20px;
+    line-height: 40px;
+    color: rgb(0, 121, 107);
+  }
+  .list a div p{
+    padding: 10px;
+    font-size: 15px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.527);
+  }
+  /*앱 다운로드*/
+  .app{
+    display: block;
+    margin: 100px auto;
+    margin-bottom: 50px;
+    width: 924px;
+    height: 300px;
+  }
+  .app_container{
+    width: 924px;
+    height: 300px;
+    background: url(../image/appimg.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+  .app_container p{
+    font-size: 28px;
+    padding: 103px;
+    padding-bottom: 20px;
+  }
+  .app_container p b{
+    color: rgb(255, 102, 0);
+  }
+  .android img, .ios img{
+    width: 168px;
+    height: 52px;
+  }
+
+  /*트랜드 숙소*/
+  .trand_container{
+    margin: 40px auto;
+    width: 924px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .trand_container h2{
+    font-size: 25px;
+  }
+  .tr_content{
+    margin-top: 20px;
+    text-align: center;
+    line-height: 200px;
+  }
+  .tr_content h3{
+    color: white;
+    font-size: 30px;
+  }
+  #camp{
+    border-radius: 20px;
+    width: 924px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.373) url(../image/가평img.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+  #jeonju{
+    margin-right: 20px;
+    border-radius: 20px;
+    width: 452px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.373) url(../image/전주img.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+  #sinra{
+    border-radius: 20px;
+    width: 452px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.373) url(../image/신라스테이.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+  #gongiam{
+    margin-right: 20px;
+    border-radius: 20px;
+    width: 452px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.373) url(../image/곤지암리조트.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+  #yangpyung{
+    border-radius: 20px;
+    width: 452px;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.373) url(../image/양평.jpg) no-repeat center;
+    background-size: cover;
+    background-blend-mode: darken;
+  }
+
+
+  /*이벤트*/
+  .section h2{
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+	.section input[id*="slide"] {
+    display:none;
+  }
+  .section{
+    margin: 100px auto;
+    width: 924px;
+  }
+	.section .slidewrap {
+    width:924px;
+    margin:0 auto;
+    overflow:hidden;
+  }
+	.section .slidelist {
+    white-space:nowrap;
+    font-size:0;
+  }
+	.section .slidelist > li {
+    display:inline-block;
+    vertical-align:middle;
+    width:100%;
+    transition:all .5s;
+  }
+	.section .slidelist > li > a {
+    display:block;
+    position:relative;
+    overflow:hidden;
+  }
+	.section .slidelist > li > a img {
+    width:100%;
+  }
+	.section .slidelist label {
+    position:absolute;
+    z-index:1;
+    top:50%;
+    transform:translateY(-50%);
+    padding:50px;
+    cursor:pointer;
+  }
+	.section .slidelist .left {
+    background:url('../image/left.png') center center / 100% no-repeat;
+  }
+	.section .slidelist .right {
+    right:0;
+    background:url('../image/right.png') center center / 100% no-repeat;
+  }
+	.section input[id="slide1"]:checked ~ .slidewrap .slidelist > li {
+    transform:translateX(0%);
+  }
+	.section input[id="slide2"]:checked ~ .slidewrap .slidelist > li {
+    transform:translateX(-100%);
+  }
+	.section input[id="slide3"]:checked ~ .slidewrap .slidelist > li {
+    transform:translateX(-200%);
+  }
+	.section input[id="slide1"]:checked ~ .slidewrap li:nth-child(1) .left {
+    left:-30px;
+    transition:all .35s ease .5s;
+  }
+	.section input[id="slide1"]:checked ~ .slidewrap li:nth-child(1) .right {
+    right:-30px;
+    transition:all .35s ease .5s;
+  }
+	.section input[id="slide2"]:checked ~ .slidewrap li:nth-child(2) .left {
+    left:-30px;
+    transition:all .35s ease .5s;
+  }
+	.section input[id="slide2"]:checked ~ .slidewrap li:nth-child(2) .right {
+    right:-30px;
+    transition:all .35s ease .5s;
+  }
+	.section input[id="slide3"]:checked ~ .slidewrap li:nth-child(3) .left {
+    left:-30px;
+    transition:all .35s ease .5s;
+  }
+	.section input[id="slide3"]:checked ~ .slidewrap li:nth-child(3) .right {
+    right:-30px;
+    transition:all .35s ease .5s;
+  }
+
+  /*공지사항*/
+  .notice{
+    margin: 100px auto;
+    width: 924px;
+  }
+  .notice h2{
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .notice_container{
+    width: 924px;
+    border-top: 3px solid black;
+  }
+  .notice_list{
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .notice_list_content{
+    margin: 20px;
+    height: 60px;
+    border-bottom: 2px solid #ccc;
+  }
+  .notice_list_content a{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
+  }
+  .notice_title{
+    text-align: center;
+    font-size: 20px;
+    color: #ccc;
+    width: 100px;
+  }
+  .notice_info{
+    font-size: 18px;
+    width: 600px;
+  }
+  .notice_info:hover{
+    color: blue;
+  }
+  .notice_date{
+    text-align: center;
+    font-size: 20px;
+    width: 150px;
+    color: #ccc;
+  }
+}
