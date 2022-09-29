@@ -139,7 +139,7 @@
     font-size: 4vmin;
   }
   #camp{
-    border-radius: 20px;
+    border-radius: 5px;
     width: 100%;
     height: 25vmin;
     background: rgba(0, 0, 0, 0.373) url(../image/가평img.jpg) no-repeat center;
@@ -147,7 +147,7 @@
     background-blend-mode: darken;
   }
   #jeonju{
-    border-radius: 20px;
+    border-radius: 5px;
     width: 100%;
     height: 25vmin;
     background: rgba(0, 0, 0, 0.373) url(../image/전주img.jpg) no-repeat center;
@@ -155,7 +155,7 @@
     background-blend-mode: darken;
   }
   #sinra{
-    border-radius: 20px;
+    border-radius: 5px;
     width: 100%;
     height: 25vmin;
     background: rgba(0, 0, 0, 0.373) url(../image/신라스테이.jpg) no-repeat center;
@@ -163,7 +163,7 @@
     background-blend-mode: darken;
   }
   #gongiam{
-    border-radius: 20px;
+    border-radius: 5px;
     width: 100%;
     height: 25vmin;
     background: rgba(0, 0, 0, 0.373) url(../image/곤지암리조트.jpg) no-repeat center;
@@ -171,7 +171,7 @@
     background-blend-mode: darken;
   }
   #yangpyung{
-    border-radius: 20px;
+    border-radius: 5px;
     width: 100%;
     height: 25vmin;
     background: rgba(0, 0, 0, 0.373) url(../image/양평.jpg) no-repeat center;
@@ -406,7 +406,7 @@
     font-size: 30px;
   }
   #camp{
-    border-radius: 20px;
+    border-radius: 5px;
     width: 924px;
     height: 200px;
     background: rgba(0, 0, 0, 0.373) url(../image/가평img.jpg) no-repeat center;
@@ -415,7 +415,7 @@
   }
   #jeonju{
     margin-right: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 452px;
     height: 200px;
     background: rgba(0, 0, 0, 0.373) url(../image/전주img.jpg) no-repeat center;
@@ -423,7 +423,7 @@
     background-blend-mode: darken;
   }
   #sinra{
-    border-radius: 20px;
+    border-radius: 5px;
     width: 452px;
     height: 200px;
     background: rgba(0, 0, 0, 0.373) url(../image/신라스테이.jpg) no-repeat center;
@@ -432,7 +432,7 @@
   }
   #gongiam{
     margin-right: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 452px;
     height: 200px;
     background: rgba(0, 0, 0, 0.373) url(../image/곤지암리조트.jpg) no-repeat center;
@@ -440,7 +440,7 @@
     background-blend-mode: darken;
   }
   #yangpyung{
-    border-radius: 20px;
+    border-radius: 5px;
     width: 452px;
     height: 200px;
     background: rgba(0, 0, 0, 0.373) url(../image/양평.jpg) no-repeat center;

@@ -1,10 +1,6 @@
 .body_wrap{
   margin-top: 72px;
 }
-a:link, a:visited {
-  color: rgb(83, 83, 83);
-}
-a:hover { color:black; }
 .sub_top_wrap h2{
   display: none;
 }
@@ -221,6 +217,12 @@ button {
   .btn_area_align_vertical_list li {
     padding-bottom: 5px;
     font-size: 18px;
+  }
+  .btn_area_align_vertical_list li a{
+    color: rgb(83, 83, 83);
+  }
+  .btn_area_align_vertical_list li a:hover{
+    color: black;
   }
   .filter_wrap {
     width: 294px;
