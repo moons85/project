@@ -191,35 +191,13 @@
             </div>
           </a>
       </div>
-      <div class="section" id="event_id">
+      <div id="slideshow">
         <h2>진행중인 이벤트</h2>
-        <input type="radio" name="slide" id="slide1" checked>
-        <input type="radio" name="slide" id="slide2">
-        <input type="radio" name="slide" id="slide3">
-        <div class="slidewrap">
-          <ul class="slidelist">
-            <li>
-              <a>
-                <label for="slide3" class="left"></label>
-                <img src="image/eventimg1.jpg">
-                <label for="slide2" class="right"></label>
-              </a>
-            </li>
-            <li>
-              <a>
-                <label for="slide1" class="left"></label>
-                <img src="image/eventimg2.png">
-                <label for="slide3" class="right"></label>
-              </a>
-            </li>
-            <li>
-              <a>
-                <label for="slide2" class="left"></label>
-                <img src="image/eventimg3.jpg">
-                <label for="slide1" class="right"></label>
-              </a>
-            </li>
-          </ul>
+        <div id="slides">
+          <img src="image/eventimg1.jpg">
+          <img src="image/eventimg2.png">
+          <img src="image/eventimg3.jpg">
+          <img src="image/eventimg4.jpg">
         </div>
       </div>
       <div class="notice">
@@ -326,5 +304,21 @@
       </footer>
     </div>
   </div>
+  <script>
+    var current = 0
+    showslides()
+
+    function showslides(){
+      var slides = document.querySelectorAll("#slides > img")
+      for(let i=0; i<slides.length; i++){
+        slides[i].style.display = "none"
+      }
+
+      current++
+      if(current > slides.length) current = 1
+      slides[current - 1].style.display = "block"
+      setTimeout(showslides, 2000)
+    }
+  </script>
 </body>
 </html>

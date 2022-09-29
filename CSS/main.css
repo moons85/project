@@ -180,93 +180,29 @@
   }
 
   /*이벤트*/
-  .section h2{
-    margin-bottom: 20px;
-    font-size: 4vmin;
-  }
-	.section input[id*="slide"] {
-    display:none;
-  }
-  .section{
+  #slideshow{
     margin: 80px auto;
+    margin-bottom: 20px;
     width: 90%;
+    height: 216px;
+    overflow: hidden;
+    position: relative;
   }
-	.section .slidewrap {
-    width:100%;
-    margin:0 auto;
-    overflow:hidden;
+  #slides{
+    margin-top: 30px;
+    position: absolute;
   }
-	.section .slidelist {
-    white-space:nowrap;
-    font-size:0;
+  #slides > img{
+    width: 100%;
+    float: left;
   }
-	.section .slidelist > li {
-    display:inline-block;
-    vertical-align:middle;
-    width:100%;
-    transition:all .5s;
-  }
-	.section .slidelist > li > a {
-    display:block;
-    position:relative;
-    overflow:hidden;
-  }
-	.section .slidelist > li > a img {
-    width:100%;
-  }
-	.section .slidelist label {
-    position:absolute;
-    z-index:1;
-    top:50%;
-    transform:translateY(-50%);
-    padding:50px;
-    cursor:pointer;
-  }
-	.section .slidelist .left {
-    left: 0;
-    background:url('../image/left.png') center center / 50% no-repeat;
-  }
-	.section .slidelist .right {
-    right:0;
-    background:url('../image/right.png') center center / 50% no-repeat;
-  }
-	.section input[id="slide1"]:checked ~ .slidewrap .slidelist > li {
-    transform:translateX(0%);
-  }
-	.section input[id="slide2"]:checked ~ .slidewrap .slidelist > li {
-    transform:translateX(-100%);
-  }
-	.section input[id="slide3"]:checked ~ .slidewrap .slidelist > li {
-    transform:translateX(-200%);
-  }
-	.section input[id="slide1"]:checked ~ .slidewrap li:nth-child(1) .left {
-    left:-30px;
-    transition:all .35s ease .5s;
-  }
-	.section input[id="slide1"]:checked ~ .slidewrap li:nth-child(1) .right {
-    right:-30px;
-    transition:all .35s ease .5s;
-  }
-	.section input[id="slide2"]:checked ~ .slidewrap li:nth-child(2) .left {
-    left:-30px;
-    transition:all .35s ease .5s;
-  }
-	.section input[id="slide2"]:checked ~ .slidewrap li:nth-child(2) .right {
-    right:-30px;
-    transition:all .35s ease .5s;
-  }
-	.section input[id="slide3"]:checked ~ .slidewrap li:nth-child(3) .left {
-    left:-30px;
-    transition:all .35s ease .5s;
-  }
-	.section input[id="slide3"]:checked ~ .slidewrap li:nth-child(3) .right {
-    right:-30px;
-    transition:all .35s ease .5s;
+  #slideshow h2{
+    font-size: 4vmin;
   }
 
   /*공지사항*/
   .notice{
-    margin: 100px auto;
+    margin: 30px auto;
     width: 90%;
   }
   .notice h2{
@@ -514,87 +450,23 @@
 
 
   /*이벤트*/
-  .section h2{
-    margin-bottom: 20px;
-    font-size: 25px;
-  }
-	.section input[id*="slide"] {
-    display:none;
-  }
-  .section{
+  #slideshow{
     margin: 100px auto;
     width: 924px;
+    height: 216px;
+    overflow: hidden;
+    position: relative;
   }
-	.section .slidewrap {
-    width:924px;
-    margin:0 auto;
-    overflow:hidden;
+  #slides{
+    margin-top: 30px;
+    position: absolute;
   }
-	.section .slidelist {
-    white-space:nowrap;
-    font-size:0;
+  #slides > img{
+    width: 100%;
+    float: left;
   }
-	.section .slidelist > li {
-    display:inline-block;
-    vertical-align:middle;
-    width:100%;
-    transition:all .5s;
-  }
-	.section .slidelist > li > a {
-    display:block;
-    position:relative;
-    overflow:hidden;
-  }
-	.section .slidelist > li > a img {
-    width:100%;
-  }
-	.section .slidelist label {
-    position:absolute;
-    z-index:1;
-    top:50%;
-    transform:translateY(-50%);
-    padding:50px;
-    cursor:pointer;
-  }
-	.section .slidelist .left {
-    background:url('../image/left.png') center center / 100% no-repeat;
-  }
-	.section .slidelist .right {
-    right:0;
-    background:url('../image/right.png') center center / 100% no-repeat;
-  }
-	.section input[id="slide1"]:checked ~ .slidewrap .slidelist > li {
-    transform:translateX(0%);
-  }
-	.section input[id="slide2"]:checked ~ .slidewrap .slidelist > li {
-    transform:translateX(-100%);
-  }
-	.section input[id="slide3"]:checked ~ .slidewrap .slidelist > li {
-    transform:translateX(-200%);
-  }
-	.section input[id="slide1"]:checked ~ .slidewrap li:nth-child(1) .left {
-    left:-30px;
-    transition:all .35s ease .5s;
-  }
-	.section input[id="slide1"]:checked ~ .slidewrap li:nth-child(1) .right {
-    right:-30px;
-    transition:all .35s ease .5s;
-  }
-	.section input[id="slide2"]:checked ~ .slidewrap li:nth-child(2) .left {
-    left:-30px;
-    transition:all .35s ease .5s;
-  }
-	.section input[id="slide2"]:checked ~ .slidewrap li:nth-child(2) .right {
-    right:-30px;
-    transition:all .35s ease .5s;
-  }
-	.section input[id="slide3"]:checked ~ .slidewrap li:nth-child(3) .left {
-    left:-30px;
-    transition:all .35s ease .5s;
-  }
-	.section input[id="slide3"]:checked ~ .slidewrap li:nth-child(3) .right {
-    right:-30px;
-    transition:all .35s ease .5s;
+  #slideshow h2{
+    font-size: 25px;
   }
 
   /*공지사항*/
