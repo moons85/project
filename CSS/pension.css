@@ -1,0 +1,360 @@
+.body_wrap{
+  margin-top: 72px;
+}
+a:link, a:visited {
+  color: rgb(83, 83, 83);
+}
+a:hover { color:black; }
+.sub_top_wrap h2{
+  display: none;
+}
+
+.btn_area_align_vertical {
+  display: none;
+}
+.btn_area_align_vertical_list {
+  display: none;
+}
+.btn_area_align_vertical_box button div {
+  display: none;
+}
+.filter_wrap h3 {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+.filter_wrap {
+  display: none;
+}
+.mobile_btn {
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+}
+.mobile_btn .btn_area, .btn_date {
+  float: left;
+  text-align: center;
+  width: 50%;
+  height: 40px;
+  border: 1px solid #ccc;
+}
+.mobile_btn .btn_area span {
+  font-size: xx-small;
+}
+.mobile_btn .btn_area {
+  padding-top: 4px;
+  border-radius: 5px 0 0 5px;
+}
+.mobile_btn .btn_date {
+  line-height: 40px;
+  border-radius: 0 5px 5px 0;
+  border-left: none;
+}
+.top_sort{
+  display: none;
+}
+.top_sort_mobile {
+  width: 90%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.top_sort_mobile button {
+  font-family: "jalnan";
+  src: url("../font/Jalnan.ttf");
+  border: 1px solid #ccc;
+  width: 33%;
+  display: inline-block;
+  padding: 5px 10px;
+  
+}
+.title {
+  width: 100%;
+  font-size: xx-small;
+  height: 27px;
+  padding: 10px 6px;
+  background: #eee;
+}
+.title span {
+  float: right;
+}
+.pension_list {
+  width: 100%;
+  height: 250px;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+}
+.pension_list img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+.pension_name h3{
+  position: absolute;
+  top: 60%;
+  left: 2%;
+  font-size: x-large;
+  color: #fff;
+}
+.pension_name span {
+  position: absolute;
+  top: 72%;
+  left: 2%;
+  color: orange;
+}
+.pension_name p {
+  position: absolute;
+  top: 80%;
+  left: 2%;
+  color: #fff;
+  font-size: large;
+}
+.price {
+  position: absolute;
+  top: 72%;
+  right: 5%;
+  color: #fff;
+  font-size:x-large;
+}
+.price del {
+  font-size:medium;
+  opacity: 0.75;
+}
+.event_info {
+  position: absolute;
+  top: 92%;
+  left: 2%;
+  right: 2%;
+  border-top: 1px solid rgba(255, 255, 255, 0.185);
+  padding-top: 3px;
+  font-size: small;
+  color: rgba(150, 253, 219, 0.692);
+}
+
+
+
+/* 태블릿버전 */
+@media all and (min-width:768px) {
+}
+
+
+/* pc버전 */
+
+@media all and (min-width:1024px) {
+  .sub_main {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+
+  .contents_sub_wrap {
+    margin: 0 auto;
+  }
+  .sub_wrap {
+    float: left;
+  }
+  .mobile_btn{
+    display: none;
+  }
+  .sub_top_wrap {
+  background: #f7323f;
+  }
+  .sub_top_wrap h2{
+    display: block;
+    background: #f7323f;
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+    width: 1024px;
+    height: 40px;
+    background: none;
+    padding: 0 25px;
+    font-size: xx-large;
+  }
+  .sub_top_wrap_1 {
+    background: #f7323f;
+    width: 100%;
+  }
+  .btn_area_align_vertical_box{
+    width: 1024px;
+    margin: 0 auto;
+  }
+  .btn_area_align_vertical_box button { 
+    display: block;
+    background: #f7323f;
+    color: #fff;
+    /* margin: 0 auto; */
+    width: 250px;
+    height: 64px;
+    background: none;
+    font-size: 18px;
+    font-family: "jalnan";
+    src: url("../font/Jalnan.ttf");
+  }
+  .btn_area_align_vertical_box button div {
+    display: block;
+    /* text-align: center; */
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #af252eb6;
+    border-radius: 5px;
+    background: #df303bb6;
+    /* margin-left: 30%; */
+    position: relative;
+  }
+  .btn_area_align_vertical_list {
+    position: absolute;
+    list-style: none;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+  }
+  .btn_area_align_vertical_box:hover .btn_area_align_vertical_list{
+    display: block;
+    padding: 30px 30px;
+    z-index: 1;
+  }
+  .btn_area_align_vertical_list li {
+    padding-bottom: 5px;
+    font-size: 18px;
+  }
+  .filter_wrap {
+    width: 294px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 32px;
+    margin-right: 20px;
+    margin-top: 40px;
+    padding: 10px;
+    
+  }
+
+  .filter_wrap h3 {
+    padding: 20px 15px;
+    font-size: large;
+    display: block;
+  }
+  .btn_date_pc {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 25px;
+  }
+  .date_wrap {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  .filter_wrap button {
+    font-size: 18px;
+    font-family: "jalnan";
+    src: url("../font/Jalnan.ttf");
+    
+  }
+  .filter_wrap .reset {
+    text-align: center;
+    border: 1px solid #b12d43;
+    color: #b12d43;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    background: #fff;
+  }
+  .filter_wrap .submit {
+    text-align: center;
+    border: 1px solid #b12d43;
+    border-radius: 5px;
+    background: #b12d43;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+  }
+  .form_button {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .filter_wrap ul {
+    margin-bottom: 40px;
+  }
+  .filter_wrap li {
+    list-style: none;
+    font-size: 18px;
+    display: inline-block;
+    padding: 5px;
+    width: 125px;
+    color: rgb(54, 54, 54);
+    
+  }
+  .filter_wrap .checkbox_0 li {
+    display: block;
+    width: 100%;
+  }
+  .filter_wrap p {
+    padding: 15px;
+    font-size: large;
+    color: rgb(54, 54, 54);
+  }
+  .list_wrap {
+    width: 670px;
+    height: 40px;
+    margin-top: 40px;
+    display: inline-block;
+  }
+  .top_sort {
+    display: block;
+    width: 670px;
+  }
+  .top_sort button {
+    font-size: 18px;
+    font-family: "jalnan";
+    src: url("../font/Jalnan.ttf");
+    border: 1px solid #ccc;
+    padding: 10px 18px;
+    width: 24.5%;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .title {
+    width: 670px;
+    margin-bottom: 10px; 
+    background: #fff;
+    color: rgb(54, 54, 54);
+    font-size:medium;
+  }
+  .title span {
+    float: right;
+  }
+  .pension_list {
+    width: 670px;
+    height: 300px;
+    list-style: none;
+  }
+  .pension_list img {
+    width: 100%;
+    height: 100%;
+  }
+  .top_sort_mobile {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+  .btn_area {
+    display: none;
+  }
+}
