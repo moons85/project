@@ -1,0 +1,210 @@
+/* 모바일버전 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "jalnan";
+  src: url("../font/Jalnan.ttf");
+}
+a {
+text-decoration: none;
+}
+a:link, a:visited {
+  color: rgb(83, 83, 83);
+}
+a:hover { color:black; }
+#login_form {
+  width: 70%;
+}
+.sub_login {
+  width: 100%;
+  display: block;
+  position: fixed;
+  min-width: 320px;
+  height: 100%;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(34, 34, 34, 0.87);
+  touch-action: none;
+}
+.sub_login section {
+  width: 80%;
+  margin: 50px auto;
+}
+.fix_title {
+  position: relative;
+  margin-bottom: 16px;
+  border-bottom: none;
+  width: 100%;
+  height: 44px;
+  text-align: center;
+}
+.fix_title .logo_text img {
+  width: 150px;
+  height: 32px;
+}
+#loginForm button {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 5px;
+  font-size:medium;
+  font-family: "jalnan";
+  src: url("../font/Jalnan.ttf");
+}
+
+.icon_ligin_kakaotalk img{
+  width: 18px;
+  height: 15px;
+}
+#kakao_login_btn {
+  background: rgb(255, 230, 0);
+  border: 1px solid rgb(255, 230, 0);
+  border-radius: 5px;
+}
+.icon_ligin_facebook img {
+  width: 20px;
+  height: 15px;
+  border-radius: 50%;
+}
+#facebook_login_btn {
+  background-color: rgb(33, 150, 243);
+  border: 1px solid rgb(33, 150, 243);
+  border-radius: 5px;
+  color: #fff;
+}
+.icon_ligin_naver img {
+  width: 20px;
+  height: 15px;
+}
+#naver_login_btn {
+  background-color: rgb(60, 181, 63);
+  border: 1px solid rgb(60, 181, 63);
+  border-radius: 5px;
+  color: #fff;
+}
+.space_or {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 12px;
+    margin: 8px 0;
+  }
+  .space_or::before {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 10px 0 0;
+  }
+  .space_or::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 0 0 10px;
+  }
+  .inp_type1_mail {
+    position: relative;
+    height: 40px;
+    margin-bottom: 8px;
+    padding: 0 10px 0 38px;
+    border: 1px solid rgba(0,0,0,0.26);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .inp_type1_mail input {
+    position: relative;
+    top: 9px;
+    width: 100%;
+    height: 20px;
+    padding: 0;
+    border: none;
+    font-size: 16px;
+    vertical-align: top;
+  }
+  .inp_type1_pw {
+    position: relative;
+    height: 40px;
+    margin-bottom: 8px;
+    padding: 0 10px 0 38px;
+    border: 1px solid rgba(0,0,0,0.26);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .inp_type1_pw input {
+  position: relative;
+  top: 9px;
+  width: 100%;
+  height: 20px;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+  vertical-align: top;
+  }
+  .login_button {
+    background: #f7323f;
+    border: 1px solid #f7323f;
+    border-radius: 5px;
+    color: #fff;
+  }
+  .pw_reset {
+    float: left;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .signup {
+    float: left;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+  }
+  input:focus {outline: none;}
+
+
+
+
+
+
+
+/* 태블릿버전 */
+@media all and (min-width:768px) {
+
+
+}
+
+/* pc버전 */
+@media all and (min-width:1024px) {
+  .sub_login section {
+  width: 400px;
+  margin: 100px auto 0 auto;
+  font-size: 15px;
+  line-height: 26px;
+  }
+  #loginForm button {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size:medium;
+    font-family: "jalnan";
+    src: url("../font/Jalnan.ttf");
+  }
+
+
+
+
+
+
+
+
+
+  
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인</title>
+  <link rel="shortcut icon" href="image/mark.jpg">
+  <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body>
+  <div class="sub_login">
+    <section>
+      <form id="loginForm" action="">
+        <div class="fix_title">
+          <div class="logo_text">
+            <a href="index.html">
+              <img src="image/logo2.png" alt="로고">
+            </a>
+          </div>
+        </div>
+        <button type="button" id="kakao_login_btn" class="">
+          <span>
+            <i class="icon_ligin_kakaotalk">
+              <img src="image/카카오톡.png" alt="kakaotalk">
+            </i>
+            카카오톡으로 로그인
+          </span>
+        </button>
+        <button type="button" id="facebook_login_btn" class="">
+          <span>
+            <i class="icon_ligin_facebook">
+              <img src="image/facebook_1.png" alt="facebook">
+            </i>
+            Facebook으로 로그인
+          </span>
+        </button>
+        <button type="button" id="naver_login_btn" class="">
+          <span>
+            <i class="icon_ligin_naver">
+              <img src="image/naver1.png" alt="naver">
+            </i>
+            네이버로 로그인
+          </span>
+        </button>
+        <div class="space_or">
+          또는
+        </div>
+        <div class="inp_type1_mail">
+          <input type="email" name="user_mail" placeholder="이메일 주소" 
+          required class="required" value data-msg-required="이메일 주소를 입력해 주세요.">
+        </div>
+        <div class="inp_type1_pw">
+          <input type="password" name="user_pw" placeholder="비밀번호" 
+          required class="required" data-msg-required="비밀번호를 입력해 주세요."/>
+        </div>
+        <button class="login_button" type="submit">
+          로그인
+        </button>
+        <div class="pw_reset">
+          <a href="#">비밀번호 재설정</a>
+        </div>
+        <div class="signup">
+          <a href="signup.html">회원가입</a>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
