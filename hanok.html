@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한옥 서울권</title>
+  <link rel="stylesheet" href="CSS/header.css">
+  <script src="https://kit.fontawesome.com/108f824525.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS/hanok.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+  <link rel="shortcut icon" href="image/mark.jpg">  
+</head>
+<body>
+  <div class="wrap_container">
+    <!-- 헤더구간 -->
+    <header id="header">
+      <section>
+        <h1 class="pc"><a href="index.html"><img src="image/logo.png"></a></h1>
+        <h1 class="moblie"><a href="index.html"><img src="image/logo2.png"></a></h1>
+        <div class="menu_nav">
+          <input type="checkbox" id="btn_menu">
+          <label for="btn_menu"><span></span></label>
+          <ul class="listform_mobile" id="listform_mobile">
+            <li><a href="login.html" style="color: #f7323f;">로그인</a></li>
+            <li><a href="#notice_id">공지사항</a></li>
+            <li><a href="#event_id">이벤트</a></li>
+            <li><a href="#">자주 묻는 질문</a></li>
+            <li><a href="#">1:1 문의</a></li>
+            <li><a href="#">약관 및 정책</a></li>
+          </ul>    
+        </div>
+        <div class="btn_srch">
+          <a href="search.html" id="sh_button" class="link_sh"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <input type="text" placeholder="   지역, 숙소명" id="search_input">
+        </div>
+        <ul class="nav">
+          <li><a href="#">내주변</a></li>
+          <li><a href="login.html">예약내역</a></li>
+          <li class="over">
+            <button type="button">
+              <span>더보기</span>
+            </button>
+            <ul class="listform">
+              <li><a href="#notice_id">공지사항</a></li>
+              <li><a href="#event_id">이벤트</a></li>
+              <li><a href="#">자주 묻는 질문</a></li>
+              <li><a href="#">1:1 문의</a></li>
+              <li><a href="#">약관 및 정책</a></li>
+            </ul>
+          </li>
+          <li><a href="login.html">로그인</a></li>
+        </ul>
+      </section>
+    </header>
+    <!-- 헤더끝 -->
+    <div>
+      <div class="body_wrap">
+        <div class="sub_top_wrap">
+          <h2>한옥</h2>
+        </div>
+        <div class="list_page">
+          <div class="sub_top_wrap_1">
+            <!-- PC -->
+            <div class="btn_area_align_vertical_box">
+              <button type="button">
+                <div class="button_box_list">
+                  <span>서울권</span>
+                   전체 ▼
+                </div>
+              </button>
+              <ul class="btn_area_align_vertical_list">
+                <li><a href="#">서울권</a></li>
+                <li><a href="#">전주권</a></li>
+                <li><a href="#">경주/안동권</a></li>
+                <li><a href="#">그 외 지역</a></li>
+              </ul>            
+            </div>
+            <div class="mobile_btn">
+              <div class="btn_area">
+                <span>서울</span><br>
+                강남/역삼/삼성/논현
+              </div>
+              <div class="btn_date">
+                <label for="date_0">날짜</label>
+                <input type="date" id="date_0" min="2022-09-26" max="2022-10-30">
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="sub_main">
+            <div id="contents" class="sub_wrap">
+              <!-- 왼쪽메뉴 -->
+              <div class="filter_wrap">
+                <section class="date_wrap">
+                  <h3>날짜</h3>
+                  <div class="btn_date_pc">
+                    <label for="date_0"></label>
+                    <input type="date" id="date_0" min="2022-09-26" max="2022-10-30">
+                    <label for="date_1"> ~ </label>
+                    <input type="date" id="date_1" min="2022-09-26" max="2022-10-30">              
+                  </div>
+                </section>
+                <form action="">
+                  <h3>상세조건</h3>
+                  <div class="form_button">
+                  <button type="reset" class="reset" onclick="res()">초기화</button>
+                  <button type="submit" class="submit">적용</button>
+                  </div>
+                  <section>
+                    <p>한옥 유형</p>
+                    <ul class="checkbox_0">
+                      <li>
+                        <input type="checkbox" id="reserve_0">
+                        <label for="reserve_0">호텔·리조트</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="reserve_1">
+                        <label for="reserve_1">펜션</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="reserve_2">
+                        <label for="reserve_2">고택</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="reserve_3">
+                        <label for="reserve_3">종택</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="reserve_4">
+                        <label for="reserve_4">게스트하우스</label>
+                      </li>
+                    </ul>
+                  </section>
+                  <section>
+                    <p>가격 <span id="value"></span>만원 이상</p>
+                    <div class="slidecontainer">
+                      <input type="range" min="1" max="30" value="1" class="slider" id="myRange">
+                   </div>
+                  </section>
+                  <section>
+                    <p>공용시설</p>
+                    <ul>
+                      <li>
+                        <input type="checkbox" id="tmino_0">
+                        <label for="tmino_0">피트니스</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_1">
+                        <label for="tmino_1">수영장</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_2">
+                        <label for="tmino_2">사우나</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_3">
+                        <label for="tmino_3">골프장</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_4">
+                        <label for="tmino_4">레스토랑</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_5">
+                        <label for="tmino_5">엘레베이터</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_6">
+                        <label for="tmino_6">라운지</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_7">
+                        <label for="tmino_7">공용PC</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_8">
+                        <label for="tmino_8">BBQ</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_9">
+                        <label for="tmino_9">카페</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_10">
+                        <label for="tmino_10">공용스파</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_11">
+                        <label for="tmino_11">족구장</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_12">
+                        <label for="tmino_12">세미나실</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_13">
+                        <label for="tmino_13">편의점</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_14">
+                        <label for="tmino_14">노래방</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_15">
+                        <label for="tmino_15">주방/식당</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_16">
+                        <label for="tmino_16">세탁기</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_17">
+                        <label for="tmino_17">건조기</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_18">
+                        <label for="tmino_18">탈수기</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_19">
+                        <label for="tmino_19">주차장</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_20">
+                        <label for="tmino_20">취사가능</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_21">
+                        <label for="tmino_21">공용샤워실</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_22">
+                        <label for="tmino_22">온천</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_23">
+                        <label for="tmino_23">스키장</label>
+                      </li>
+                    </ul>
+                  </section>
+                  <section>
+                    <p>객실 내 시설</p>
+                    <ul>
+                      <li>
+                        <input type="checkbox" id="tmino_24">
+                        <label for="tmino_24">객실스파</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_25">
+                        <label for="tmino_25">미니바</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_26">
+                        <label for="tmino_26">와이파이</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_27">
+                        <label for="tmino_27">욕실용품</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_28">
+                        <label for="tmino_28">TV</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_29">
+                        <label for="tmino_29">에어컨</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_31">
+                        <label for="tmino_31">냉장고</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_32">
+                        <label for="tmino_32">객실샤워실</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_33">
+                        <label for="tmino_33">욕조</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_34">
+                        <label for="tmino_34">드라이기</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_35">
+                        <label for="tmino_35">다리미</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_36">
+                        <label for="tmino_36">전기밥솥</label>
+                      </li>
+                    </ul>
+                  </section>
+                  <section>
+                    <p>기타</p>
+                    <ul>
+                      <li>
+                        <input type="checkbox" id="tmino_37">
+                        <label for="tmino_37">반려견동반</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_38">
+                        <label for="tmino_38">조식포함</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_39">
+                        <label for="tmino_39">객실내흡연</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_40">
+                        <label for="tmino_40">발렛파킹</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_41">
+                        <label for="tmino_41">금연</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_42">
+                        <label for="tmino_42">객실내취사</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_43">
+                        <label for="tmino_43">프린터사용</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_44">
+                        <label for="tmino_44">짐보관가능</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_45">
+                        <label for="tmino_45">개인사물함</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_46">
+                        <label for="tmino_46">무료주차</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_47">
+                        <label for="tmino_47">픽업가능</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_48">
+                        <label for="tmino_48">캠프파이어</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_49">
+                        <label for="tmino_49">카드결제</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="tmino_50">
+                        <label for="tmino_50">편의시설</label>
+                      </li>
+                    </ul>
+                  </section>
+                </form>
+              </div>
+              <!-- 왼쪽메뉴끝  -->
+            </div>
+            <div class="list_wrap">
+              <!-- PC버전 -->
+              <div class="top_sort">
+                <button type="button">거리순</button>
+                <button type="button">낮은 가격 순</button>
+                <button type="button">높은 가격 순</button>
+                <button type="button">지도</button>
+              </div>
+              <div class="top_sort_mobile">
+                <button type="button">상세조건</button>
+                <button type="button">거리 순</button>
+                <button type="button">지도</button>
+              </div>
+              <div class="title">
+                <h3>은평구
+                <span></span></h3>
+              </div>
+              <ul style="overflow:hidden">
+                <li class="hanok_list">
+                  <img src="image/은평한옥마을은화당.jpg" alt="">
+                  <div class="hanok_list_text">
+                    <div class="hanok_name">
+                      <h3>은평 한옥마을 은화당</h3>
+                      <!-- <span>/span><br> -->
+                      <p>은평구 | 진관사 도보 11분</p>
+                    </div>
+                    <div class="price">
+                      <b></b><br>
+                      <b>300,000원</b>
+                    </div>
+                    <!-- <div class="event_info">
+                      <p></p>
+                    </div> -->
+                  </div>
+                </li>
+                <div class="title">
+                  <h3>종로구
+                  <span></span></h3>
+                </div>
+                <li class="hanok_list">
+                  <img src="image/종로한옥궁게스트하우스.jpg" alt="">
+                  <div class="hanok_list_text">
+                    <div class="hanok_name">
+                      <h3>종로한옥 궁 게스트하우스</h3>
+                      <span>8.0 만족해요 (11)</span><br>
+                      <p>종로구 | 종로3가역 도보 3분</p>
+                    </div>
+                    <div class="price">
+                      <b></b><br>
+                      <b>179,000원</b>
+                    </div>
+                    <!-- <div class="event_info">
+                      <p></p>
+                    </div> -->
+                  </div>
+                </li>
+                <li class="hanok_list">
+                  <img src="image/북촌한옥소현당.jpg" alt="">
+                  <div class="hanok_list_text">
+                    <div class="hanok_name">
+                      <h3>북촌 한옥 소현당</h3>
+                      <span>8.7 만족해요 (5)</span><br>
+                      <p>종로구 | 인사동 도보 1분</p>
+                    </div>
+                    <div class="price">
+                      <b></b><br>
+                      <b>160,000원</b>
+                    </div>
+                    <!-- <div class="event_info">
+                      <p>내용없음</p>
+                    </div> -->
+                  </div>
+                </li>
+                <li class="hanok_list">
+                  <img src="image/종로한옥누하당.jpg" alt="">
+                  <div class="hanok_list_text">
+                    <div class="hanok_name">
+                      <h3>종로 한옥 누하당</h3>
+                      <!-- <span></span><br> -->
+                      <p>종로구 | 통인시장 도보 1분</p>
+                    </div>
+                    <div class="price">
+                      <b></b><br>
+                      <b>125,000원</b>
+                    </div>
+                    <!-- <div class="event_info">
+                      <p></p>
+                    </div> -->
+                  </div>
+                </li>
+                <li class="hanok_list">
+                  <img src="image/종로한옥누하당.jpg" alt="">
+                  <div class="hanok_list_text">
+                    <div class="hanok_name">
+                      <h3>종로 한옥 누하당</h3>
+                      <!-- <span></span><br> -->
+                      <p>종로구 | 통인시장 도보 1분</p>
+                    </div>
+                    <div class="price">
+                      <b></b><br>
+                      <b>125,000원</b>
+                    </div>
+                    <!-- <div class="event_info">
+                      <p></p>
+                    </div> -->
+                  </div>
+                </li>
+                <li class="hanok_list">
+                  <img src="image/종로연당한옥게스트하우스.jpg" alt="">
+                  <div class="hanok_list_text">
+                    <div class="hanok_name">
+                      <h3>종로 연당 한옥 게스트하우스</h3>
+                      <span>7.3 만족해요 (7)</span><br>
+                      <p>종로구 | 북촌한옥마을 도보 5분</p>
+                    </div>
+                    <div class="price">
+                      <b></b><br>
+                      <b>50,000원</b>
+                    </div>
+                    <!-- <div class="event_info">
+                      <p></p>
+                    </div> -->
+                  </div>
+                </li>
+                <li class="hanok_list">
+                  <img src="image/북촌에밀한옥게스트하우스.jpg" alt="">
+                  <div class="hanok_list_text">
+                    <div class="hanok_name">
+                      <h3>북촌 에밀 한옥 게스트하우스</h3>
+                      <span>5.8 좋아요 (5)</span><br>
+                      <p>종로구 | 북촌한옥마을 도보 7분</p>
+                    </div>
+                    <div class="price">
+                      <b></b><br>
+                      <b>205,200원</b>
+                    </div>
+                    <!-- <div class="event_info">
+                      <p></p>
+                    </div> -->
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- 푸터구간 -->
+    <div class="wrap_container">
+      <footer>
+        <div class="ft_section">
+          <ul class="link">
+            <li><a href="#">회사소개</a><span>|</span></li>
+            <li><a href="#">이용약관</a><span>|</span></li>
+            <li><a href="#"><b>개인정보처리방침</b></a><span>|</span></li>
+            <li><a href="#">소비자 분쟁해결 기준</a><span>|</span></li>
+            <li><a href="#">사업자 정보확인</a><span>|</span></li>
+            <li><a href="#">여기어때 마케팅센터</a><span>|</span></li>
+            <li><a href="#">액티비티 호스트센터</a><span>|</span></li>
+            <li><a href="#">HOTEL 여기어때</a><span>|</span></li>
+            <li><a href="#">콘텐츠산업진흥법에의한 표시</a></li>
+          </ul>
+          <p>
+            <b>고객행복센터 1670-6250</b>
+            <span>오전 9시 - 새벽 3시</span>
+          </p>
+          <address>
+            <span>(주) 여기어때컴퍼니</span>
+            <p>
+              주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층 | 대표이사 : 정명훈 | 사업자 등록번호: 724-86-00224
+              <br>
+              통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호: 제1026-24호 | 전화번호 : 1670-6250 | 전자우편주소 : help@goodchoice.kr
+              <br>
+              <span>
+                (주)여기어때컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.
+              </span>
+              <br>
+              <p>Copyright GC COMPANY Corp. All rights reserved.</p>
+            </p>
+          </address>
+          <div class="icon">
+            <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="naverblog"><i class="fa-solid fa-blog"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  <!-- 푸터끝 -->
+  <script>
+    window.onload = function(){
+      var slider = document.getElementById("myRange")
+      var output = document.getElementById("value")
+      output.innerHTML = slider.value
+      slider.oninput = function(){
+        output.innerHTML = this.value
+      }
+    }
+    function res(){
+        document.getElementById("value").innerHTML = "1"
+    }
+  </script>
+</body>
+</html>
