@@ -119,7 +119,7 @@
               <form action="">
                 <h3>상세조건</h3>
                 <div class="form_button">
-                <button type="reset" class="reset">초기화</button>
+                <button type="reset" class="reset" onclick="res()">초기화</button>
                 <button type="submit" class="submit">적용</button>
                 </div>
                 <section>
@@ -137,6 +137,12 @@
                       <label for="reserve_2">페이백 할인</label>
                     </li>
                   </ul>
+                </section>
+                <section>
+                  <p>가격 <span id="value"></span>만원 이상</p>
+                  <div class="slidecontainer">
+                    <input type="range" min="1" max="30" value="1" class="slider" id="myRange">
+                 </div>
                 </section>
                 <section>
                   <p>이색테마</p>
@@ -392,5 +398,19 @@
       </footer>
     </div>
   <!-- 푸터끝 -->
+
+  <script>
+    window.onload = function(){
+      var slider = document.getElementById("myRange")
+      var output = document.getElementById("value")
+      output.innerHTML = slider.value
+      slider.oninput = function(){
+        output.innerHTML = this.value
+      }
+    }
+    function res(){
+        document.getElementById("value").innerHTML = "1"
+    }
+  </script>
 </body>
 </html>
