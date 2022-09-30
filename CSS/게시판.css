@@ -1,0 +1,140 @@
+@media all and (min-width:320px){
+  .notice_header{
+    display: none;
+  }
+  .notice_wrap{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .left_notice{
+    display: none;
+  }
+  .right_notice{
+    width: 100%;
+  }
+  .right_notice h4{
+    width: 100%;
+    padding: 20px;
+    color: #f7323f;
+    border-bottom: 2px solid #ccc;
+    font-size: 18px;
+    margin: 50px 0 20px 10px;
+    
+  }
+  .right_notice h4:hover{
+    color: #f7323f;
+  }
+  .notice_content{
+    width: 100%;
+    font-size: 18px;
+    list-style: none;
+    padding: 20px;
+  }
+  .notice_content li{
+    margin: 30px 0 50px 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    line-height: 50px;
+  }
+  .notice_content li a{
+    color: black;
+  }
+  .notice_content li a:hover{
+    color: blue;
+  }
+  .notice_content li a div{
+    display: flex;
+    justify-content: space-between;
+  }
+  .notice_content li a div p span{
+    color: #ccc;
+  }
+}
+
+
+@media all and (min-width:1024px){
+  .notice_header{
+    display: block;
+    margin-top: 72px;
+    width: 100%;
+    height: 80px;
+    background: #f7323f;
+    color: white;
+  }
+  .notice_header h1{
+      display: block;
+      background: #f7323f;
+      color: #fff;
+      margin: 0 auto;
+      position: relative;
+      width: 1024px;
+      height: 40px;
+      background: none;
+      padding: 0 25px;
+      font-size: xx-large;
+  }
+  .notice_wrap{
+    margin: 0 auto;
+    width: 924px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .left_notice{
+    display: block;
+    font-size: 18px;
+    list-style: none;
+    padding: 20px;
+    width: 30%;
+  }
+  .left_notice li{
+    margin: 50px;
+  }
+  .left_notice li a{
+    color: #0400006c;
+  }
+  .left_notice li a:hover{
+    color: #f7323f;
+  }
+  .right_notice{
+    width: 70%;
+  }
+  .right_notice h4{
+    width: 100%;
+    padding: 20px;
+    color: #f7323f;
+    border-bottom: 2px solid #ccc;
+    font-size: 18px;
+    margin: 50px 0 20px 10px;
+    
+  }
+  .right_notice h4:hover{
+    color: #f7323f;
+  }
+  .notice_content{
+    width: 100%;
+    font-size: 18px;
+    list-style: none;
+    padding: 20px;
+  }
+  .notice_content li{
+    margin: 30px 0 50px 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    line-height: 50px;
+  }
+  .notice_content li a{
+    color: black;
+  }
+  .notice_content li a:hover{
+    color: blue;
+  }
+  .notice_content li a div{
+    display: flex;
+    justify-content: space-between;
+  }
+  .notice_content li a div p span{
+    color: #ccc;
+  }
+}
